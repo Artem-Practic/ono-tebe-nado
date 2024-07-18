@@ -1,4 +1,5 @@
 /* место для вашего кода */
+
 .header {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
@@ -137,6 +138,7 @@
 }
 
 .cover__description-text {
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
@@ -146,12 +148,13 @@
 }
 
 .bet-button {
+  color: #fff;
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   font-weight: 500;
   line-height: 25.83px;
-  color: #fff;
   text-transform: uppercase;
   padding: 12px 32px;
   cursor: pointer;
@@ -202,28 +205,22 @@
   flex-direction: column;
   justify-content: space-between;
   color: #fff;
-  padding: 50px 40px 46px 40px;
+  padding: 50px 40px 47px 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .card__title {
@@ -231,7 +228,6 @@
   left: 0;
   top: 0;
   z-index: 1;
-
   text-transform: uppercase;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -241,9 +237,6 @@
 }
 
 .card__text {
-  position: relative;
-  left: 0;
-  top: -3px;
   z-index: 1;
   font-weight: 400;
   font-size: 20px;
@@ -305,25 +298,34 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.009em;
+  letter-spacing: normal;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
 }
 
-.about__text-span-first-paragraph {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
+.about__text-letter-spacing-normal {
   letter-spacing: normal;
 }
 
-.about__text-span-second-paragraph {
+.about__text-letter-spacing-atypical {
+  letter-spacing: 0.01em;
+}
+
+.about__text-letter-spacing-extended {
+  letter-spacing: 0.02em;
+}
+
+.about__text-letter-spacing-advanced {
+  letter-spacing: 0.03em;
+}
+
+.about__text-letter-spacing-large {
   letter-spacing: 0.04em;
 }
 
-.about__text-span-letter-spacing-norm {
-  letter-spacing: normal;
+.about__text-letter-spacing-narrowed {
+  letter-spacing: -0.01em;
 }
 
 .footer {
